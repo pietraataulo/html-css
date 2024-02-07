@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid';
+    src: url(pacote-projeto-d010/fontes/idroid.otf);
+}
+
+body {
+    background-color: #84E1AD;
+    margin: 0px;
+}
+
+main {
+    width: 800px;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section > p {
+     text-indent: 30px;
+}
+
+
+header {
+   
+    
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom, #3DDA84, #1A5C38);
+}
+header > h1 {
+    padding: 4px;
+}
+header > p {
+    padding: 40px;
+}
+
+header > nav {
+    text-align: left;
+    background-color: #1e683f;
+    
+}
+nav > a {
+    color: white;
+    
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+section > h1 {
+    font-family: 'idroid';
+    color: #236240;
+    padding-left: 10px;
+}
+h2:che {
+    font-family: 'idroid';
+    color: #236240;
+    font-size: larger;
+    padding-left: 10px;
+    background-image: linear-gradient(to right, #C7EBD7, white);
+    
+}
