@@ -6,6 +6,7 @@ function finish() {
     let rad5 = document.getElementsByName('rad5')
 
     let res = document.getElementById('res')
+    let res2 = document.getElementById('res2')
 
     let count = 0
     
@@ -26,4 +27,23 @@ function finish() {
     }
     
     res.innerHTML = `<p>You scored <strong>${count}</strong>/5! </p>`
+
+    if (count == 0) {
+        res2.innerHTML = `<p>GRRRRRRRRRR you not a lob >:(</p>`
+    } 
+    if (count == 1) {
+        res2.innerHTML = `You should know MUCH more.`
+    } 
+    if (count == 2) {
+        res2.innerHTML = `Are you really a Lobster?`
+    }
+    if (count == 3) {
+        res2.innerHTML = `Not bad.`
+    }
+    if (count == 4) {
+        res2.innerHTML = `You REALLY know about Lobs :D`
+    }
+    if (count == 5) {
+        res2.innerHTML = `YOU THE MADDEST LOB!!!!`
+    }
 }

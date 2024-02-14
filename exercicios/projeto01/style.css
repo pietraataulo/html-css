@@ -103,11 +103,18 @@ input[type=button]:hover {
 }
 
 #res {
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
     font-size: 30px;
     font-weight: bold;
 }
 
+#res2 {
+    font-size: 20px;
+    text-indent: 10px;
+    font-weight: bold;
+    color: #aa4353;
+    
+}
 footer {
     background-color: #3a2537;
     color: #f1f0ccd8;
