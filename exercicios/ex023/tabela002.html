@@ -19,13 +19,24 @@
             border: 1px solid black;
             padding: 10px;
         }
+
+        caption {
+         font-size: 1.5em;
+         font-weight: bold;
+         padding: 10px;
+         background-color: lightgrey;
+        }
         
         .num {
             text-align: right;
         }
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(83, 83, 83);
             color: white;
+        }
+
+        .pop {
+         width: 50px;
         }
     </style>
 </head>
@@ -34,19 +45,26 @@
     <!--
         ANATOMIA DAS TABELAS GRANDES
         TABLE
+           CAPTION (legenda)
            THEAD
               TR, TD, TH
            TBODY
               TR, TD, TH
            TFOOT
               TR, TD, TH
+
+              th (título)
+              td (dado)
+
+              scope => onde está os dados (em coluna ou em linha)
     -->
 
     <table>
+      <caption>População das Unidades Federativas</caption>
         <thead>
            <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" class="pop">População</th>
 
            </tr>
         </thead>
@@ -162,7 +180,7 @@
         </tbody>
         <tfoot>
               <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>203 062 512</strong></td>
               </tr>
         </tfoot>
