@@ -1,0 +1,93 @@
+@charset "UTF-8" ;
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playpen+Sans:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font1: "Josefin Sans", serif;
+    --font2: "Playpen Sans", sans-serif;
+    --cor1: #F3B3A6;
+    --cor2: #4C3B4D;
+    --cor3: #A53860;
+    --cor4: #BFD5E2;
+    --cor5: #C7EBF0;
+}
+
+body {
+    font-family: var(--font1);
+    background-color: #d5f3f7;
+    height: 100vh;
+    
+}
+
+header {
+    background-image: linear-gradient(to right, #c55981, #F3B3A6);
+    color: white;
+    min-height: 160px;
+    max-height: 200px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.356);
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-family: var(--font1);
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 47px;
+    
+}
+
+header p {
+    text-align: center;
+    color: #4c3b4d92;
+}
+
+.memory-game {
+    
+    border-radius: 30px;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 700px;
+   
+}
+
+.memory-card {
+    width: calc(25% - 40px);
+    height: calc(33.333% - 40px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.front-face, .back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.155);
+    backface-visibility: hidden;
+    
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg)
+}
