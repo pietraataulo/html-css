@@ -1,10 +1,12 @@
+continuar = input('Continuar? ')
+
 while True:
-    sabor = input('Sabor:')
-    if sabor != 'cp' and sabor != 'ac':
-        continue
-    else:
+    continuar = input('Continuar?')
+    if continuar == 'N':
         break
-print('Certo')
+    elif continuar == 'S':
+        continue
+    
 
 
 
